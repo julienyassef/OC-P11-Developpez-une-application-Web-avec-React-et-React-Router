@@ -1,0 +1,58 @@
+.display {
+    display: flex;
+    height: 68px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1240px;
+    background-color: white;
+    z-index: 100;
+  }
+
+.container-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 57px;
+}
+
+.link {
+
+    color: #FF6060;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;    
+}
+
+.link:hover {
+    color: #FF6060; /* Couleur souhaitée au survol */
+    text-decoration: none; /* Supprime le soulignement au survol */
+    cursor: pointer;
+}
+
+.link-active:hover {
+    color: #FF6060; /* Couleur souhaitée au survol */
+    cursor: pointer;
+}
+
+.link-active {
+    /* Styles pour le lien actif */
+    color: #FF6060;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-decoration: underline;
+    
+    cursor: pointer; 
+  }
+
+.logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
