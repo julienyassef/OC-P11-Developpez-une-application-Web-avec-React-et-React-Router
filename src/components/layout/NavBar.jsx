@@ -1,13 +1,13 @@
 import './NavBar.css'
-import { Link, NavLink } from 'react-router-dom'
-import logo from '../assets/logo.svg'
+import { NavLink } from 'react-router-dom'
+import logo from '../../assets/logo.svg'
 
 
 
 
 function NavBar() {
   return (
-    <div className='display'>
+    <div className='header'>
         <img src={logo} alt="Logo" className="logo" />
         <div className='container-link'>
             <NavLink   className={({ isActive }) => isActive ? 'link-active' : 'link'}

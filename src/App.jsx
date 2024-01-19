@@ -8,7 +8,8 @@ import About from './Page/About';
 import NotFound from './page/NotFound';
 
 // NavBar et footer
-import NavBar from './components/NavBar';
+import NavBar from './components/layout/NavBar';
+import Footer from './components/layout/footer';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer/>
     </Router>
     </>
   )
