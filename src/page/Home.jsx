@@ -9,6 +9,7 @@ function Home() {
   return (
     <div className="home">
       <SloganBanner/>
+      <div className="container-thumbnail">
       {data.map(item => (
         <Thumbnail
           key={item.id}
@@ -17,6 +18,8 @@ function Home() {
           cover={item.cover}
         />
       ))}
+
+      </div>
     </div>
   )
 }

@@ -6,6 +6,7 @@ const Thumbnail = ({id, title, cover}) => {
     <div className="container-thumbnail">
       <NavLink to={`/${id}`}>
       <div className="card">
+        <div className="darken-img"></div>
         <img className="img-cover" src={cover} alt="photo du logement"/>
         <h2 className="title-accommodation"> {title}</h2>
       </div>

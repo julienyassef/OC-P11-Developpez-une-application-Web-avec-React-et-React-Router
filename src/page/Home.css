@@ -1,3 +1,9 @@
 .home {
     /* width: 100%; */
 }
+
+.container-thumbnail {
+    border-radius: 25px;
+    background: #F6F6F6;
+    padding: 56px 50px;
+}
