@@ -1,6 +1,8 @@
+import './About.css'
+
 function About() {
   return (
-    <div>About</div>
+    <div className='toto'>About</div>
   )
 }
 export default About
