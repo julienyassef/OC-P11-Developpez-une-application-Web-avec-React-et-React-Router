@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const Thumbnail = ({id, title, cover}) => {
   return (
-    <div className="container-thumbnail">
+    <>
       <NavLink to={`/${id}`}>
       <div className="card">
         <div className="darken-img"></div>
@@ -11,7 +11,7 @@ const Thumbnail = ({id, title, cover}) => {
         <h2 className="title-accommodation"> {title}</h2>
       </div>
     </NavLink>
-    </div>
+    </>
   )
 }
 export default Thumbnail

@@ -5,5 +5,11 @@
 .container-thumbnail {
     border-radius: 25px;
     background: #F6F6F6;
-    padding: 56px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 43px;
+    margin-bottom: 50px;
+    padding: 50px;
+    justify-content: space-between;
+    gap: 10px; 
 }
