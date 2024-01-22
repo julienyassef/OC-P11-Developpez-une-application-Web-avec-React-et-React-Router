@@ -1,0 +1,26 @@
+.collapse {
+    display: flex;
+    width: 582px;
+    height: 52PX;
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #FF6060; 
+}
+
+.arrow{
+    width: 32px;
+    height: 32px;
+    transform: rotate(-180deg);
+    margin-left: auto;
+}
+
+.title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    margin-right: auto;
+}
