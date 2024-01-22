@@ -65,13 +65,15 @@
         padding: 0;
       }
     .link {
-        font-size: 12px;    
+        font-size: 12px;  
+        text-transform: uppercase;  
     }
     .link-active {
-        font-size: 12px;    
+        font-size: 12px; 
+        text-transform: uppercase;   
     }
     .container-link {
-        gap: 28px;
+        gap: 15px;
     }
 }
   
