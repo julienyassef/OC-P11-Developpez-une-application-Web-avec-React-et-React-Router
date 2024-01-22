@@ -7,6 +7,7 @@
     max-width: 1240px;
     background-color: white;
     z-index: 100;
+    margin-bottom: 50px;
   }
 
 .container-link {
@@ -16,7 +17,6 @@
 }
 
 .link {
-
     color: #FF6060;
     text-align: right;
     font-family: Montserrat;
@@ -47,7 +47,6 @@
     font-weight: 500;
     line-height: 142.6%;
     text-decoration: underline;
-    
     cursor: pointer; 
   }
 
@@ -55,4 +54,24 @@
     max-width: 100%;
     height: auto;
   }
+
+
+@media only screen and (max-width: 767px) {
+    .header {
+        margin-bottom: 10px;
+      }
+    .logo {
+        max-width: 122px;
+        padding: 0;
+      }
+    .link {
+        font-size: 12px;    
+    }
+    .link-active {
+        font-size: 12px;    
+    }
+    .container-link {
+        gap: 28px;
+    }
+}
   

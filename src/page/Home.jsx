@@ -18,7 +18,6 @@ function Home() {
           cover={item.cover}
         />
       ))}
-
       </div>
     </div>
   )

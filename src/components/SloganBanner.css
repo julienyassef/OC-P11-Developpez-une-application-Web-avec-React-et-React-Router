@@ -25,6 +25,7 @@
     border-radius: 25px; 
 }
 
+
 .title-slogan {
     position: absolute;
     top: 35%;
@@ -36,4 +37,27 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%
+}
+
+@media only screen and (max-width: 767px) {
+    .img-banner-slogan {
+        width: 100%;
+        height: 111px; 
+    }
+    .darken-banner {
+        width: 100%;
+        height: 111px;
+    }
+    .container-banner-slogan {
+        width: 100%;
+        height: 111px;
+    }
+    .title-slogan {
+        font-size: 24px;
+        left: 10px;
+        transform: translateY(-50%);
+        
+    }
+  
+
 }
