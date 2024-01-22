@@ -1,21 +1,43 @@
 import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import "./accommodation.css";
 
 
 import Collapse from '../components/Collapse';
 import Carrousel from '../components/Carrousel';
 
-import data from '../data/data.json'; // <== il faut le fetch ;)
+
 
 function Accommodation() {
   const { id } = useParams();
+  const [data, setData] = useState([]);
 
-  // useEffect(() => {
-  //   // va être lancé à la fin du chargement de la page
-  //   // fetch
-  //   // ajout au state "data"
-  // }, [])
+  useEffect(() => {
+    // Fonction asynchrone pour effectuer la requête Fetch
+    const fetchData = async () => {
+      try {
+        // Utilisation de l'API Fetch pour récupérer les données
+        const response = await fetch('/data/data.json');
 
+        // Vérifier si la requête a réussi (statut 200)
+        if (response.ok) {
+          // Convertir la réponse en JSON
+          const result = await response.json();
+          
+          // Mettre à jour l'état avec les données
+          setData(result);
+        } else {
+          console.error('Erreur lors de la récupération des données');
+        }
+      } catch (error) {
+        console.error('Erreur lors de la récupération des données :', error);
+      }
+    };
+    // Appeler la fonction fetchData
+    fetchData();
+  }, []);
+  
+ 
   // useEffect(() => {
   //   // vérifié si dans data y'a bien un logement avec id === id
   //   // si oui ok letzgoo on fait rien :D

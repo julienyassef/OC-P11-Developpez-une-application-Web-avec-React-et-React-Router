@@ -1,12 +1,40 @@
 import "./home.css"
+import { useEffect, useState } from 'react';
+
 import Thumbnail from '../components/Thumbnail'
 import SloganBanner from '../components/SloganBanner'
 
-// Import des données JSON
-import data from '../data/data.json' // <== il faut le fetch
 
 function Home() {
-  // // useEffect
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    // Fonction asynchrone pour effectuer la requête Fetch
+    const fetchData = async () => {
+      try {
+        // Utilisation de l'API Fetch pour récupérer les données
+        const response = await fetch('/data/data.json');
+
+        // Vérifier si la requête a réussi (statut 200)
+        if (response.ok) {
+          // Convertir la réponse en JSON
+          const result = await response.json();
+          console.log('JSON result:', result);
+          
+          // Mettre à jour l'état avec les données
+          setData(result);
+        } else {
+          console.error('Erreur lors de la récupération des données');
+        }
+      } catch (error) {
+        console.error('Erreur lors de la récupération des données :', error);
+      }
+    };
+    // Appeler la fonction fetchData
+    fetchData();
+  }, []);
+  
+
   return (
     <div className="home">
       <SloganBanner/>

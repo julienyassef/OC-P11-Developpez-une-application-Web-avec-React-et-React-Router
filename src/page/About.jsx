@@ -3,7 +3,8 @@ import pictureAbout from '../assets/pictureAbout.png'
 import Collapse from '../components/Collapse'
 
 // Import des données JSON
-import dataAbout from '../data/dataAbout.json'
+import dataAbout from '/public/data/dataAbout.json'
+
 
 function About() {
   return (
