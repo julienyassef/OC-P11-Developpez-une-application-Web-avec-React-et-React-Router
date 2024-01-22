@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Thumbnail = ({id, title, cover}) => {
   return (
     <>
-      <NavLink to={`/${id}`}>
+      <NavLink to={`/accommodation/${id}`}>
       <div className="card">
         <div className="darken-img"></div>
         <img className="img-cover" src={cover} alt="photo du logement"/>
