@@ -1,0 +1,45 @@
+.notFound-page {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.txt-404 {
+    color: #FF6060;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 230px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.6%;
+    margin: 0;
+}
+
+.txt-notFound {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    margin: 0;
+}
+
+.link-notFound {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-decoration-line: underline;
+    margin-bottom: 50px;
+}
+
+.link-notFound:hover {
+    color: #FF6060;
+  
+}
+
