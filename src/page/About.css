@@ -1,9 +1,10 @@
 .about {
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 38px;
+    padding: 0 5vw;
+    margin: auto;
+    gap: 30px;
     margin-bottom: 38px;
 }
 
@@ -13,6 +14,7 @@
     width: 100%;
     height: 223px;
     border-radius: 25px; 
+    filter: brightness(0.7);
 }
 
 .container-banner-about {
@@ -20,16 +22,13 @@
     width: 100%;
 }
 
-.darken-banner-about {
-    position: absolute;
-    height: 223px;
-    border-radius: 25px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.3;
-    background: #000;
-    mix-blend-mode: darken;
-    
+@media only screen and (max-width: 767px) {
+    .img-banner-about {
+        width: 100%;
+        height: 111px;
+    }
+    .about {
+        gap: 20px;
+        margin-bottom: 19px;
+    }
 }
