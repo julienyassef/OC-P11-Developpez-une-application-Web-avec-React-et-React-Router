@@ -1,7 +1,17 @@
 .collapse {
     display: flex;
-    width: 582px;
-    height: 52PX;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px 10px 5px 5px;
+    background:#F6F6F6;
+}
+
+.banner-collapse {
+    display: flex;
+    width: 100%;
+    height: 52px;
     padding: 10px 20px 10px 10px;
     align-items: center;
     border-radius: 10px;
@@ -13,7 +23,13 @@
     height: 32px;
     transform: rotate(-180deg);
     margin-left: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.rotate {
+    transform: rotate(180deg); 
+  }
 
 .title {
     color: #FFF;
@@ -23,4 +39,15 @@
     font-weight: 500;
     line-height: 142.6%;
     margin-right: auto;
+}
+
+.information {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify; 
+    padding: 20px;
+    
 }
