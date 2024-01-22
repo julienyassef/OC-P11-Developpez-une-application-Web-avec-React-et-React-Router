@@ -2,9 +2,8 @@
 .card {
     position: relative;
     width: 30%;
-    min-width: 280px;
-    height: 280px;
-    margin-top: 30px;
+    min-width: 270px;
+    height: 270px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -28,4 +27,10 @@
  
 }
 
-/* // 642px ==> card width 100% */
+@media only screen and (max-width: 767px) {
+    .card {
+        width: 100%;
+        max-width: 340px;
+        height: 255px;
+    }
+}
