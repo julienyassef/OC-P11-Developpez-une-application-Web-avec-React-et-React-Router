@@ -3,11 +3,10 @@
     height: 68px;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1240px;
     background-color: white;
     z-index: 100;
-    margin-bottom: 28px;
+    padding: 2vh 5vw;
+    margin: 0 auto 28px
   }
 
 .container-link {

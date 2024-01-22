@@ -3,9 +3,10 @@ import Thumbnail from '../components/Thumbnail'
 import SloganBanner from '../components/SloganBanner'
 
 // Import des données JSON
-import data from '../data/data.json'
+import data from '../data/data.json' // <== il faut le fetch
 
 function Home() {
+  // // useEffect
   return (
     <div className="home">
       <SloganBanner/>
