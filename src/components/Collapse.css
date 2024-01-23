@@ -50,6 +50,8 @@
     font-weight: 400;
     text-align: justify;
     padding: 20px;
+    margin-right: auto;
+    list-style-type: none;
 }
 
 @media only screen and (max-width: 767px) {
