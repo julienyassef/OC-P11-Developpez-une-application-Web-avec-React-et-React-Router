@@ -2,3 +2,14 @@
     width: 196px;
     height: 36px;
 }
+
+@media only screen and (max-width: 767px) {
+    .stars {
+        width: 19px;
+        height: 19px;
+    } 
+    .rating-container {
+        width: 98px;
+        height: 18px;
+    }
+}
