@@ -61,7 +61,9 @@ function Accommodation() {
             </div>
             <Host key={`host_${accommodation.id}`} name={accommodation.host.name} picture={accommodation.host.picture} />
             <div className='container-tags-accommodation'>
-                <Tag key={`tag_${accommodation.id}`} title={accommodation.tags}/>
+                {accommodation.tags.map(tag => (
+                    <Tag key={`tag_${tag}`} title={tag} />
+                ))}
             </div>
             <Rating key={`rating_${accommodation.id}`} count={accommodation.rating}/>
             <div className='container-collapse-accommodation'>
