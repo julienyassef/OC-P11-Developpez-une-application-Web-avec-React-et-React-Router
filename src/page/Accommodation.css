@@ -6,14 +6,59 @@
     gap: 20px;
 }
 
+.container-accommodation {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; 
+    align-items: center; 
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
 .container-title-accommodation {
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-accommodation-page{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    margin-right: auto;
+}
+
+.location-accommodation {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    margin-right: auto;
+
 }
 
 .container-tags-accommodation {
-    width: 100%;
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
 }
 
 .container-collapse-accommodation {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+   gap: 78px;
+   margin-bottom: 50px;
+}
+
+.container-rating{
+    margin-left: auto;
+}
+
+.container-host {
+    margin-left: auto;
 }

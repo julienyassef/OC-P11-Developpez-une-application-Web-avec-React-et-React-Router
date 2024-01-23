@@ -55,21 +55,27 @@ function Accommodation() {
         {accommodation && (
           <>
             <Carrousel key={`carrousel_${accommodation.id}`} pictures={accommodation.pictures} />
-            <div className='container-title-accommodation'>
-                <p className='title-accommodation'>{accommodation.title}</p>
-                <p className='location-accommodation'>{accommodation.location}</p>
+            <div className="container-accommodation">
+              <div className='container-title-accommodation'>
+                  <h2 className='title-accommodation-page'>{accommodation.title}</h2>
+                  <p className='location-accommodation'>{accommodation.location}</p>
+              </div>
+              <div className="container-host">
+                <Host key={`host_${accommodation.id}`} name={accommodation.host.name} picture={accommodation.host.picture} />
+              </div>
+              <div className='container-tags-accommodation'>
+                  {accommodation.tags.map(tag => (
+                      <Tag key={`tag_${tag}`} title={tag} />
+                  ))}
+              </div>
+              <div className="container-rating">
+                <Rating key={`rating_${accommodation.id}`} count={accommodation.rating}/>
+              </div>
             </div>
-            <Host key={`host_${accommodation.id}`} name={accommodation.host.name} picture={accommodation.host.picture} />
-            <div className='container-tags-accommodation'>
-                {accommodation.tags.map(tag => (
-                    <Tag key={`tag_${tag}`} title={tag} />
-                ))}
-            </div>
-            <Rating key={`rating_${accommodation.id}`} count={accommodation.rating}/>
-            <div className='container-collapse-accommodation'>
-                <Collapse key={`description_${accommodation.id}`} title="Description" information={accommodation.description} />
-                <Collapse key={`equipements_${accommodation.id}`} title="Équipements" equipements={accommodation.equipments} />
-            </div>
+            <div className="container-collapse-accommodation">
+            <Collapse key={`equipements_${accommodation.id}`} title="Équipements" equipements={accommodation.equipments} />
+            <Collapse key={`description_${accommodation.id}`} title="Description" information={accommodation.description} />
+            </div> 
           </>
         )}
       </div>

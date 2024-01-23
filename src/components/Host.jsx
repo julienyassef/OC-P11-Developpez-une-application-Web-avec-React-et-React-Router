@@ -1,7 +1,6 @@
 import "./Host.css";
 
 function Host({ name, picture }) {
-  // Diviser le nom en deux parties (nom et prénom)
   const [firstName, lastName] = name.split(" ");
 
   return (
