@@ -1,0 +1,34 @@
+.carrousel {
+    padding: 0 5vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carrousel-picture {
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+    height: 415px;
+  }
+  
+  .carrousel-arrow {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    flex-shrink: 0;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  
+  .carrousel-arrow-left {
+    left: 100px;
+    transform: rotate(90deg);
+  }
+  
+  .carrousel-arrow-right {
+    right: 100px;
+    transform: rotate(-90deg);
+  }
+  
