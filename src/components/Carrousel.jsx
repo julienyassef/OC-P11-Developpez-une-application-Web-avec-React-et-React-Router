@@ -18,11 +18,17 @@ function Carrousel({ pictures }) {
   };
 
   return (
-    <div className="carrousel">
+  <div className="carrousel">
+  {pictures.length > 1 ? (
+    <>
       <img className="carrousel-picture" src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} />
-      <img className="carrousel-arrow carrousel-arrow-left" src={arrow} alt="arrow" onClick={goToPrevious}/>
-      <img className="carrousel-arrow carrousel-arrow-right" src={arrow} alt="arrow" onClick={goToNext}/>
-    </div>
+      <img className="carrousel-arrow carrousel-arrow-left" src={arrow} alt="arrow" onClick={goToPrevious} />
+      <img className="carrousel-arrow carrousel-arrow-right" src={arrow} alt="arrow" onClick={goToNext} />
+    </>
+  ) : (
+    <img className="carrousel-picture" src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+  )}
+</div>
   );
 }
 
