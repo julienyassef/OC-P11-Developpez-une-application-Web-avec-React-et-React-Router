@@ -19,8 +19,8 @@ function Home() {
         if (response.ok) {
           // Convertir la réponse en JSON
           const result = await response.json();
-          console.log('JSON result:', result);
           
+        
           // Mettre à jour l'état avec les données
           setData(result);
         } else {
