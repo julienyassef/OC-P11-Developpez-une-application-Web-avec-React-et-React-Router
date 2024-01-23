@@ -1,0 +1,27 @@
+.container-host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-host-name {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+
+.name-host {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+}
+
+.picture-host {
+    width: 64px;
+    height: 64px;
+    border-radius: 200px;
+}

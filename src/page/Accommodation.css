@@ -1,8 +1,19 @@
 .accommodation {
     padding: 0 5vw;
     margin: auto;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.container-title-accommodation {
+    width: 100%;
+}
+
+.container-tags-accommodation {
+    width: 100%;
+}
+
+.container-collapse-accommodation {
+    width: 100%;
 }
