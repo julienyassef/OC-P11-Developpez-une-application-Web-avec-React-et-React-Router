@@ -4,6 +4,7 @@ import arrow from "../assets/arrow.svg";
 
 function Carrousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const totalPictures = pictures.length;
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -21,6 +22,7 @@ function Carrousel({ pictures }) {
   <div className="carrousel">
   {pictures.length > 1 ? (
     <>
+      <p className="slide-number">{`${currentIndex + 1}/${totalPictures}`}</p>
       <img className="carrousel-picture" src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} />
       <img className="carrousel-arrow carrousel-arrow-left" src={arrow} alt="arrow" onClick={goToPrevious} />
       <img className="carrousel-arrow carrousel-arrow-right" src={arrow} alt="arrow" onClick={goToNext} />
