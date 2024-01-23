@@ -1,7 +1,6 @@
 import "./Rating.css";
 
 function Rating({ count }) {
-  // Créer un tableau de 5 étoiles
   const stars = Array(5).fill(null);
 
   return (

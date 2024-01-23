@@ -1,8 +1,8 @@
 import "./Tag.css";
 
-function Tag() {
+function Tag({title}) {
   return (
-    <div>Tag</div>
+    <div className="tag">{title}</div>
   )
 }
 export default Tag
