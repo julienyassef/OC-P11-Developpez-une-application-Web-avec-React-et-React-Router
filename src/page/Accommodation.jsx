@@ -5,6 +5,9 @@ import "./accommodation.css";
 
 import Collapse from '../components/Collapse';
 import Carrousel from '../components/Carrousel';
+import Host from '../components/Host';
+import Tag from '../components/Tag';
+import Rating from '../components/Rating';
 
 function Accommodation() {
   const { id } = useParams();
@@ -52,8 +55,19 @@ function Accommodation() {
         {accommodation && (
           <>
             <Carrousel key={`carrousel_${accommodation.id}`} pictures={accommodation.pictures} />
-            <Collapse key={`description_${accommodation.id}`} title="Description" information={accommodation.description} />
-            <Collapse key={`equipements_${accommodation.id}`} title="Équipements" equipements={accommodation.equipments} />
+            <div className='container-title-accommodation'>
+                <p className='title-accommodation'>{accommodation.title}</p>
+                <p className='location-accommodation'>{accommodation.location}</p>
+            </div>
+            <Host key={`host_${accommodation.id}`} name={accommodation.host.name} picture={accommodation.host.picture} />
+            <div className='container-tags-accommodation'>
+                <Tag key={`tag_${accommodation.id}`} title={accommodation.tags}/>
+            </div>
+            <Rating key={`rating_${accommodation.id}`} count={accommodation.rating}/>
+            <div className='container-collapse-accommodation'>
+                <Collapse key={`description_${accommodation.id}`} title="Description" information={accommodation.description} />
+                <Collapse key={`equipements_${accommodation.id}`} title="Équipements" equipements={accommodation.equipments} />
+            </div>
           </>
         )}
       </div>

@@ -1,0 +1,8 @@
+.accommodation {
+    padding: 0 5vw;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
