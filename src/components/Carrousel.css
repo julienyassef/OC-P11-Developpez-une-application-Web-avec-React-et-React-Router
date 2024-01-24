@@ -46,3 +46,27 @@
     font-size: 16px;
   }
   
+  @media only screen and (max-width: 767px) {
+  
+    .carrousel-picture {
+      height: 225px;
+    }
+    
+    .carrousel-arrow {
+      width: 30px;
+      height: 30px;
+      top: 45%;
+    }
+    
+    .carrousel-arrow-left {
+      left: 20px;
+    }
+    
+    .carrousel-arrow-right {
+      right: 20px;
+    }
+  
+    .slide-number{
+      display: none;
+    }
+}

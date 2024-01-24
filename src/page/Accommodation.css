@@ -70,6 +70,7 @@
         grid-template-columns: repeat(2, 1fr);
         margin-top: 10px;
         margin-bottom: 15px;
+        gap: 5px;
     }
 
     .container-title-accommodation {
