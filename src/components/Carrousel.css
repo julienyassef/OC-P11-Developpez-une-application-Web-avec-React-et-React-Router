@@ -1,15 +1,17 @@
 .carrousel {
-    padding: 0 5vw;
     margin: auto;
     position: relative;
     overflow: hidden;
-  }
-  
-  .carrousel-picture {
-    width: 100%;
     border-radius: 25px;
-    display: block;
     height: 415px;
+  }
+
+  .carrousel-picture {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    object-fit: cover;
   }
   
   .carrousel-arrow {
@@ -23,12 +25,12 @@
   }
   
   .carrousel-arrow-left {
-    left: 50px;
+    left: 15px;
     transform: rotate(90deg);
   }
   
   .carrousel-arrow-right {
-    right: 50px;
+    right: 15px;
     transform: rotate(-90deg);
   }
 
@@ -44,11 +46,12 @@
     transform: translateX(-50%);
     color: white; 
     font-size: 16px;
+    z-index: 10;
   }
   
   @media only screen and (max-width: 767px) {
   
-    .carrousel-picture {
+    .carrousel {
       height: 225px;
     }
     

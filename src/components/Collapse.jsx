@@ -18,9 +18,9 @@ const Collapse = ({ title, information, equipements }) => {
       </div>
       {information && !isCollapsed && <div className='information'>{information}</div>}
       {equipements && !isCollapsed && <ul className='information'>{equipements.map((equipement) => (
-        <li>{equipement}</li>
+        <li key={equipement}>{equipement}</li>
       ))}</ul>}
-      </div>
+    </div>
   );
 };
 

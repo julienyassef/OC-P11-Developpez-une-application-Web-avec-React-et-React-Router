@@ -29,6 +29,7 @@
     font-weight: 500;
     margin: 0;
     margin-right: auto;
+    text-align: left;
 }
 
 .location-accommodation {
@@ -51,6 +52,7 @@
 .container-collapse-accommodation {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     gap: 78px;
     margin-bottom: 50px;
 }

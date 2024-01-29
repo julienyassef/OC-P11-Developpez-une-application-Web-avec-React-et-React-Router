@@ -35,7 +35,7 @@ function Accommodation() {
           } else {
             console.error('Logement non trouvé');
             //redirige (navigue) vers la page 404 
-            navigate('/*');
+            navigate(`/error?query=accomodation/${id}`);
           }
         } else {
           console.error('Erreur lors de la récupération des données');
@@ -73,8 +73,8 @@ function Accommodation() {
               </div>
             </div>
             <div className="container-collapse-accommodation">
-            <Collapse key={`equipements_${accommodation.id}`} title="Équipements" equipements={accommodation.equipments} />
-            <Collapse key={`description_${accommodation.id}`} title="Description" information={accommodation.description} />
+              <Collapse key={`equipements_${accommodation.id}`} title="Équipements" equipements={accommodation.equipments} />
+              <Collapse key={`description_${accommodation.id}`} title="Description" information={accommodation.description} />
             </div> 
           </>
         )}
